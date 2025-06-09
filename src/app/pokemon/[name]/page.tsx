@@ -24,7 +24,7 @@ export default function PokemonPage() {
   if (!data?.pokemon)
     return (
       <div className=" min-h-screen bg-black flex items-center justify-center text-center p-10 text-white-500">
-        Pokemon not found
+        Pokemon not found.
       </div>
     );
 
