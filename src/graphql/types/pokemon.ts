@@ -50,31 +50,3 @@ export interface Pokemon {
   maxCP: number;
   evolutions: Evolution[];
 }
-
-export interface PokemonByType {
-  id: string;
-  name: string;
-  number: string;
-  image: string;
-  types: string[];
-}
-
-export interface PokemonQueryResponse {
-  pokemon: Pokemon;
-}
-
-export interface PokemonTypesQueryResponse {
-  pokemonTypes: string[];
-}
-
-export interface PokemonByTypeQueryResponse {
-  pokemonsByType: PokemonByType[];
-}
-
-export interface PokemonQueryVariables {
-  name: string;
-}
-
-export interface PokemonByTypeQueryVariables {
-  type: string;
-}

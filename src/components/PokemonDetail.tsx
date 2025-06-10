@@ -1,13 +1,13 @@
 import { useRouter } from "next/navigation";
-import { Pokemon } from "../graphql/types/pokemon";
+import { Pokemon, Attack, Evolution } from "../graphql/types/pokemon";
 
 // Props for the component
 interface PokemonDetailProps {
   pokemon: Pokemon;
 }
 
-// Simple component to show attacks
-function AttackList({ attacks, title }: { attacks: any[]; title: string }) {
+// Component to show attacks
+function AttackList({ attacks, title }: { attacks: Attack[]; title: string }) {
   return (
     <div className="mb-4">
       <h3 className="text-lg font-semibold mb-2 text-black">{title}</h3>
@@ -24,12 +24,12 @@ function AttackList({ attacks, title }: { attacks: any[]; title: string }) {
   );
 }
 
-// Simple component to show evolutions
+// Component to show evolutions
 function EvolutionList({
   evolutions,
   onEvolutionClick,
 }: {
-  evolutions: any[];
+  evolutions: Evolution[];
   onEvolutionClick: (name: string) => void;
 }) {
   return (

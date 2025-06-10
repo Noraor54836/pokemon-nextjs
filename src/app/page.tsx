@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useQuery } from "@apollo/client";
 import { GET_POKEMONS } from "../graphql/queries";
 import PokemonCard from "../components/PokemonCard";
+import { Pokemon } from "../graphql/types/pokemon";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -75,7 +76,7 @@ export default function Home() {
                 Error loading Pokemon
               </p>
             ) : (
-              data?.pokemons.map((pokemon: any) => (
+              data?.pokemons.map((pokemon: Pokemon) => (
                 <PokemonCard key={pokemon.name} pokemon={pokemon} />
               ))
             )}
