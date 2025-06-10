@@ -2,6 +2,10 @@
 
 A modern web application built with Next.js that allows users to explore and search for Pokémon information using the Pokemon GraphQL API.
 
+# Project URL
+
+ vercel-link: (https://pokemon-nextjs-green.vercel.app/)
+
 ## 🚀 Tech Stack
 
 - **Framework**: [Next.js 14](https://nextjs.org/) - React framework with server-side rendering
@@ -79,3 +83,10 @@ pokemon_nextjs/
 - Server-side rendering with Next.js
 - Optimized image loading
 - Efficient state management
+
+### Author
+> **Author:** Sasit Sinprasong
+> **GitHub:** [(https://github.com/Noraor54836)]
+> **Phone:** (+66)91-890-3949
+> **Email:** sasitsinprasong@gmail.com
+
